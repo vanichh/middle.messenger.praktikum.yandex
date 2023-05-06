@@ -2,7 +2,7 @@
 
 ---
 
-[Netlify](https://deploy--nimble-capybara-511fe3.netlify.app/)
+[Netlify](https://regal-dieffenbachia-f33c95.netlify.app/)
 
 [Дизайн](https://www.figma.com/file/24EUnEHGEDNLdOcxg7ULwV/Chat?type=design&t=Na47U2OW4oHi0Z9s-0)
 
