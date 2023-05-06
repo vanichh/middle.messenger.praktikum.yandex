@@ -1,0 +1,23 @@
+.wrap-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    color: #999999;
+  }
+  .input {
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    border-bottom: 1px solid #3369f3;
+    padding: 7px;
+  }
+}

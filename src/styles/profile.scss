@@ -1,0 +1,76 @@
+.user {
+  margin: 0 auto;
+  width: 510px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+    .avatar {
+      display: flex;
+      width: 130px;
+      height: 130px;
+      background: #efefef;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      text-align: center;
+      color: #1e1e1e;
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+  .setting {
+    padding-top: 60px;
+    &__wrap {
+      border-bottom: 1px solid #eaeaea;
+      width: 100%;
+      display: flex;
+      padding: 10px 0;
+    }
+    &__name {
+      color: #1e1e1e;
+      font-weight: 500;
+      font-size: 13px;
+      color: #1e1e1e;
+    }
+    &__value {
+      text-align: right;
+      color: #999999;
+      margin-left: auto;
+    }
+    &__btn {
+      width: 280px;
+      height: 37px;
+      color: #fff;
+      background: #3369f3;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 60px auto 0 auto;
+      display: block;
+    }
+  }
+  .change {
+    margin-top: 60px;
+
+    &__link {
+      display: block;
+      border-top: 1px solid #eaeaea;
+      color: #3369f3;
+      padding: 10px 0;
+      font-weight: 500;
+      font-size: 13px;
+      &:first-child {
+        border-top: none;
+      }
+    }
+    &__link--red {
+      color: #ff0000;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#back.back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbfbfb;
+  border-right: 1px solid #eaeaea;
+
+  .back__arrow {
+    color: red;
+    width: 28px;
+    height: 28px;
+    font-size: 0px;
+    line-height: 0px;
+    background: url('../assets/arrow-submit.svg');
+    transform: rotate(180deg);
+  }
+}
