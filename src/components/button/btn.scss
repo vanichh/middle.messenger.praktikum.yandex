@@ -1,5 +1,5 @@
 #btn.btn {
-  background: #3369f3;
+  background: var(--color-blue);
   border-radius: 8px;
   font-family: 'Inter';
   font-style: normal;
@@ -7,7 +7,7 @@
   font-size: 13px;
   line-height: 13px;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-white);
   border: none;
   padding: 12px;
   width: 100%;

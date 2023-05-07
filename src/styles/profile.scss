@@ -11,7 +11,7 @@
       display: flex;
       width: 130px;
       height: 130px;
-      background: #efefef;
+      background: var(--color-white-300);
       border-radius: 50%;
       align-items: center;
       justify-content: center;
@@ -27,7 +27,7 @@
   .setting {
     padding-top: 60px;
     &__wrap {
-      border-bottom: 1px solid #eaeaea;
+      border-bottom: 1px solid var(--color-white-200);
       width: 100%;
       display: flex;
       padding: 10px 0;
@@ -40,14 +40,14 @@
     }
     &__value {
       text-align: right;
-      color: #999999;
+      color: var(--color-gray);
       margin-left: auto;
     }
     &__btn {
       width: 280px;
       height: 37px;
-      color: #fff;
-      background: #3369f3;
+      color: var(--color-white);
+      background: var(--color-blue);
       border-radius: 8px;
       font-size: 13px;
       font-weight: 500;
@@ -60,8 +60,8 @@
 
     &__link {
       display: block;
-      border-top: 1px solid #eaeaea;
-      color: #3369f3;
+      border-top: 1px solid var(--color-white-200);
+      color: var(--color-blue);
       padding: 10px 0;
       font-weight: 500;
       font-size: 13px;
@@ -70,7 +70,7 @@
       }
     }
     &__link--red {
-      color: #ff0000;
+      color: var(--color-red);
     }
   }
 }

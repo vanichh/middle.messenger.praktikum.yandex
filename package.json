@@ -1,7 +1,7 @@
 {
   "name": "chat_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Проект чата",
   "scripts": {
     "dev": "parcel --port 3000 --no-cache --open",
     "build": "parcel build  --no-source-maps  --no-cache",

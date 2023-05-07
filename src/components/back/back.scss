@@ -7,11 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fbfbfb;
-  border-right: 1px solid #eaeaea;
+  background: var(--color-white-100);
+  border-right: 1px solid var(--color-white-200);
 
   .back__arrow {
-    color: red;
+    color: var(--color-red);
     width: 28px;
     height: 28px;
     font-size: 0px;

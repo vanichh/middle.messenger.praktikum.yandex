@@ -8,8 +8,8 @@
   max-height: 100vh;
 
   .left {
-    border-right: 1px solid #eaeaea;
-    background: #fbfbfb;
+    border-right: 1px solid var(--color-white-200);
+    background: var(--color-white-100);
     padding: 0 10px;
     &__header {
       margin-top: 20px;
@@ -21,15 +21,15 @@
         column-gap: 5px;
         .link {
           display: block;
-          color: #999999;
+          color: var(--color-gray);
           font-weight: 500;
           font-size: 12px;
         }
         .arrow {
           width: 7px;
           height: 7px;
-          border-top: 1px solid #999999;
-          border-right: 1px solid #999999;
+          border-top: 1px solid var(--color-gray);
+          border-right: 1px solid var(--color-gray);
           margin: 0;
           transform: rotate(45deg);
         }
@@ -41,14 +41,14 @@
         margin-top: 23px;
         &__input {
           position: relative;
-          background: #efefef;
+          background: var(--color-white-300);
           border-radius: 5px;
           width: 100%;
           height: 32px;
           text-align: center;
           font-weight: 500;
           font-size: 12px;
-          color: #999999;
+          color: var(--color-gray) 999;
           padding-left: 30px;
           transition: 0.5s;
           &:focus {
@@ -83,7 +83,7 @@
         gap: 4px 10px;
         display: grid;
         width: 100%;
-        border-top: 1px solid #eaeaea;
+        border-top: 1px solid var(--color-white-200);
         padding: 12px 0;
         &:hover {
           cursor: pointer;
@@ -99,19 +99,19 @@
         &__time {
           font-weight: 500;
           font-size: 9px;
-          color: #999999;
+          color: var(--color-gray);
         }
         &__text {
-          color: #999999;
+          color: var(--color-gray);
           font-weight: 500;
           font-size: 12px;
         }
         &__count {
           height: 20px;
           width: 20px;
-          color: #fff;
+          color: var(--color-white);
           text-align: center;
-          background: #3369f3;
+          background: var(--color-blue);
           font-size: 11px;
           font-weight: 500;
           border-radius: 50%;
@@ -151,7 +151,7 @@
       }
     }
     .messages {
-      border-top: 1px solid #eaeaea;
+      border-top: 1px solid var(--color-white-200);
       height: 100%;
       overflow: auto;
       max-height: calc(100vh - 55px - 52px);
@@ -161,7 +161,7 @@
       }
       &__time {
         text-align: center;
-        color: #999;
+        color: var(--color-gray);
         margin-top: 48px;
         font-size: 12px;
         font-style: normal;
@@ -179,13 +179,13 @@
           padding: 10px;
           border-radius: 10px;
           &.companion {
-            background: #f8f8f8;
+            background: var(--color-white-400);
           }
           &.you {
-            background: #e4edfd;
+            background: var(--color-white-500);
             margin-left: auto;
             .message__time {
-              color: #3369f3;
+              color: var(--color-blue);
             }
           }
           &__text {
@@ -195,7 +195,7 @@
             line-height: 15px;
           }
           &__time {
-            color: #999;
+            color: var(--color-gray);
             font-size: 9px;
             font-style: normal;
             font-weight: 500;
@@ -208,7 +208,7 @@
       }
     }
     .footer {
-      border-top: 1px solid #eaeaea;
+      border-top: 1px solid var(--color-white-200);
       padding: 10px 0;
       .form {
         display: flex;
@@ -223,7 +223,7 @@
           flex-shrink: 0;
           .material {
             position: absolute;
-            background: #ffffff;
+            background: var(--color-white);
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
             border-radius: 12px;
             display: none;
@@ -236,11 +236,11 @@
           width: 32px;
         }
         &__text {
-          background: #efefef;
+          background: var(--color-white-300);
           border-radius: 30px;
           width: 100%;
           padding-left: 20px;
-          color: #999999;
+          color: var(--color-gray) 999;
           font-weight: 500;
           font-size: 12px;
           height: 32px;
@@ -248,7 +248,7 @@
         &__submit {
           width: 28px;
           height: 28px;
-          background: #3369f3;
+          background: var(--color-blue);
           border-radius: 50%;
           flex-shrink: 0;
           background: url('../assets/arrow-submit.svg');

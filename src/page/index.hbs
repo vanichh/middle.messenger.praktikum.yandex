@@ -15,13 +15,21 @@ title: Главная страница чата
       </section>
       <label class="search">
         <input placeholder="Поиск" class="search__input" type="search" />
-        <img class="search__icon" src="../assets/loupe.svg" />
+        <img
+          alt="Иконка лупы поиска"
+          class="search__icon"
+          src="../assets/loupe.svg"
+        />
       </label>
     </header>
     <section class="list">
       {{#each @root.list.data}}
         <article class="item">
-          <img class="item__image" src={{this.linkAvatar}} />
+          <img
+            alt="Аватар юзера - {{title}}"
+            class="item__image"
+            src={{this.linkAvatar}}
+          />
           <p class="item__title">
             {{title}}
           </p>
@@ -40,7 +48,7 @@ title: Главная страница чата
   </article>
   <article class="right">
     <header class="header">
-      <img height="34" width="34" src="../assets/avatar.svg" />
+      <img "Аватар пользователя" height="34" width="34" src="../assets/avatar.svg" />
       <p class="name">
         Вадим
       </p>
@@ -72,15 +80,15 @@ title: Главная страница чата
         <button class="btn">
           <ul class="material">
             <li>
-              <img src="../assets/menu-file/photo_video.svg" />
+              <img alt="Иконка загрузки изображений" src="../assets/menu-file/photo_video.svg" />
               <input type="form__file" />
             </li>
             <li>
-              <img src="../assets/menu-file/file.svg" />
+              <img alt="Иконка загрузки файлов" src="../assets/menu-file/file.svg" />
               <input type="form__file" />
             </li>
             <li>
-              <img src="../assets/menu-file/locations.svg" />
+              <img  alt="Иконка отправки геолокации" src="../assets/menu-file/locations.svg" />
               <input type="form__file" />
             </li>
           </ul>
