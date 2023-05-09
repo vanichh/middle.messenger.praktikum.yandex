@@ -1,0 +1,29 @@
+:root {
+  --size: 2px;
+}
+
+.mb-4 {
+  margin-bottom: calc(var(--size) * 20);
+}
+.mb-3 {
+  margin-bottom: calc(var(--size) * 10);
+}
+.mb-2 {
+  margin-bottom: calc(var(--size) * 4);
+}
+.mb-1 {
+  margin-bottom: calc(var(--size) * 2);
+}
+
+.font-s-1 {
+  font-size: calc(var(--size) * 5);
+}
+.font-s-2 {
+  font-size: calc(var(--size) * 10);
+}
+.font-s-3 {
+  font-size: calc(var(--size) * 15);
+}
+.font-s-4 {
+  font-size: calc(var(--size) * 20);
+}

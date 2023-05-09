@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+// base
+@import './variables.scss';
+@import './reset.scss';
+@import './chips.scss';
+@import './global.scss';
+@import './layouts.scss';
+
+// page
+@import './form.scss';
+@import './home.scss';
+@import './profile.scss';
+@import './erorr.scss';
+
+//  components
+@import '../components/back/back.scss';
+@import '../components/input/input.scss';
+@import '../components/button/btn.scss';

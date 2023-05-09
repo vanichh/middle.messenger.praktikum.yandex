@@ -1,0 +1,101 @@
+---
+title: Главная страница чата
+---
+
+{{!< default}}
+
+<main class="chat">
+  <article class="left">
+    <header class="left__header">
+      <section class="profile">
+        <a class="link" href="./profile.hbs">
+          Профиль
+        </a>
+        <div class="arrow"></div>
+      </section>
+      <label class="search">
+        <input placeholder="Поиск" class="search__input" type="search" />
+        <img
+          alt="Иконка лупы поиска"
+          class="search__icon"
+          src="../assets/loupe.svg"
+        />
+      </label>
+    </header>
+    <section class="list">
+      {{#each @root.list.data}}
+        <article class="item">
+          <img
+            alt="Аватар юзера - {{title}}"
+            class="item__image"
+            src={{this.linkAvatar}}
+          />
+          <p class="item__title">
+            {{title}}
+          </p>
+          <time class="item__time">
+            {{time}}
+          </time>
+          <p class="item__text">
+            {{text}}
+          </p>
+          <div class="item__count">
+            {{this.count}}
+          </div>
+        </article>
+      {{/each}}
+    </section>
+  </article>
+  <article class="right">
+    <header class="header">
+      <img "Аватар пользователя" height="34" width="34" src="../assets/avatar.svg" />
+      <p class="name">
+        Вадим
+      </p>
+      <article class="menu">
+        <span class="round"></span>
+        <span class="round"></span>
+        <span class="round"></span>
+      </article>
+    </header>
+    <section class="messages">
+      <time class="messages__time">
+        19 июня
+      </time>
+      <ul class="list">
+        {{#each @root.messages.data}}
+          <li class="message {{this.type}}">
+            <p class="message__text">
+              {{this.text}}
+            </p>
+            <time class="message__time">
+              {{this.time}}
+            </time>
+          </li>
+        {{/each}}
+      </ul>
+    </section>
+    <footer class="footer">
+      <form class="form" onsubmit="event.preventDefault()">
+        <button class="btn">
+          <ul class="material">
+            <li>
+              <img alt="Иконка загрузки изображений" src="../assets/menu-file/photo_video.svg" />
+              <input type="form__file" />
+            </li>
+            <li>
+              <img alt="Иконка загрузки файлов" src="../assets/menu-file/file.svg" />
+              <input type="form__file" />
+            </li>
+            <li>
+              <img  alt="Иконка отправки геолокации" src="../assets/menu-file/locations.svg" />
+              <input type="form__file" />
+            </li>
+          </ul>
+        </button>
+        <input type="text" class="form__text" placeholder="Сообщение" />
+        <input type="submit" value="" class="form__submit" />
+      </form>
+    </footer>
+  </article>
+</main>

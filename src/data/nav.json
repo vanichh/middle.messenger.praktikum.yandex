@@ -1,0 +1,12 @@
+{
+  "list": [
+    { "name": "Главная", "link": "./index.hbs" },
+    { "name": "Профиль", "link": "./profile.hbs" },
+    { "name": "Редактирование профиля", "link": "./change-user.hbs" },
+    { "name": "Смена пароля", "link": "./change-password.hbs" },
+    { "name": "Логин", "link": "./login.hbs" },
+    { "name": "Авторизация", "link": "./signin.hbs" },
+    { "name": "404", "link": "./404.hbs" },
+    { "name": "500", "link": "./500.hbs" }
+  ]
+}

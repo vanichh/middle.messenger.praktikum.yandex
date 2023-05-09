@@ -1,0 +1,23 @@
+---
+title: Страница изменений настроек
+---
+
+
+{{!< default}}
+  {{> back/back }}
+  <main class="user">
+    <header class="header">
+      <div class="avatar">
+        <img alt="Аватар пользователя" height="40px" width="40px" src="../assets/default-avatar.svg" />
+      </div>
+    </header>
+    <form class="setting">
+      {{#each @root.user.data}}
+      <label class="setting__wrap">
+        <span class="setting__name">{{this.title}}</span>
+        <input name={{this.name}} class="setting__value" value={{this.value}} type="{{this.type}}">
+      </label>
+      {{/each}}
+      <button class="setting__btn">Сохранить</button>
+    </form>
+  </main>

@@ -1,0 +1,19 @@
+.nav {
+  width: 100vw;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--color-black);
+  padding: 2px 0;
+  &__list {
+    margin: 0 auto;
+    display: flex;
+    width: fit-content;
+    column-gap: 20px;
+  }
+  &__link {
+    font-size: 14px;
+    color: var(--color-white);
+  }
+}

@@ -1,0 +1,14 @@
+---
+title: Страница авторизации
+---
+
+{{!< default}}
+  <main class="container">
+    <form id="form" class="form">
+      <h2 class="form__title">Вход</h2>
+      {{> input/input type='text' text="пароль" }}
+      {{> input/input type='password' text="пароль" }}
+      {{> button/btn text='Авторизоваться' type="button" }}
+      <a href="./signin.hbs">Нет аккаунта?</a>
+    </form>
+  </main>

@@ -1,0 +1,259 @@
+.chat {
+  display: grid;
+  margin: 0 auto;
+  width: fit-content;
+  grid-template-columns: 310px minmax(300px, 969px);
+  column-gap: 20px;
+  height: 100%;
+  max-height: 100vh;
+
+  .left {
+    border-right: 1px solid var(--color-white-200);
+    background: var(--color-white-100);
+    padding: 0 10px;
+    &__header {
+      margin-top: 20px;
+      .profile {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        width: fit-content;
+        column-gap: 5px;
+        .link {
+          display: block;
+          color: var(--color-gray);
+          font-weight: 500;
+          font-size: 12px;
+        }
+        .arrow {
+          width: 7px;
+          height: 7px;
+          border-top: 1px solid var(--color-gray);
+          border-right: 1px solid var(--color-gray);
+          margin: 0;
+          transform: rotate(45deg);
+        }
+      }
+
+      .search {
+        position: relative;
+        display: block;
+        margin-top: 23px;
+        &__input {
+          position: relative;
+          background: var(--color-white-300);
+          border-radius: 5px;
+          width: 100%;
+          height: 32px;
+          text-align: center;
+          font-weight: 500;
+          font-size: 12px;
+          color: var(--color-gray) 999;
+          padding-left: 30px;
+          transition: 0.5s;
+          &:focus {
+            font-weight: 600;
+            text-align: left;
+          }
+          &:focus + .search__icon {
+            left: 10px;
+            transform: translate(0, -50%);
+          }
+        }
+        &__icon {
+          position: absolute;
+          left: 40%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.2s ease-out;
+        }
+      }
+    }
+    .list {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      max-height: calc(100vh - 100px);
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .item {
+        grid-template-columns: 47px 1fr 25px;
+        gap: 4px 10px;
+        display: grid;
+        width: 100%;
+        border-top: 1px solid var(--color-white-200);
+        padding: 12px 0;
+        &:hover {
+          cursor: pointer;
+        }
+        &__image {
+          grid-row: 1 / span 2;
+        }
+        &__title {
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 13px;
+        }
+        &__time {
+          font-weight: 500;
+          font-size: 9px;
+          color: var(--color-gray);
+        }
+        &__text {
+          color: var(--color-gray);
+          font-weight: 500;
+          font-size: 12px;
+        }
+        &__count {
+          height: 20px;
+          width: 20px;
+          color: var(--color-white);
+          text-align: center;
+          background: var(--color-blue);
+          font-size: 11px;
+          font-weight: 500;
+          border-radius: 50%;
+          line-height: 20px;
+          justify-self: center;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+
+    .header {
+      display: flex;
+      padding: 10px 0;
+      align-items: center;
+      column-gap: 10px;
+      padding-right: 15px;
+      .menu {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+        .round {
+          background: #1e1e1e;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-weight: 600;
+        font-size: 13px;
+        color: #1e1e1e;
+      }
+    }
+    .messages {
+      border-top: 1px solid var(--color-white-200);
+      height: 100%;
+      overflow: auto;
+      max-height: calc(100vh - 55px - 52px);
+      padding: 20px 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &__time {
+        text-align: center;
+        color: var(--color-gray);
+        margin-top: 48px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        width: 100%;
+        display: block;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        row-gap: 10px;
+        .message {
+          max-width: 380px;
+          padding: 10px;
+          border-radius: 10px;
+          &.companion {
+            background: var(--color-white-400);
+          }
+          &.you {
+            background: var(--color-white-500);
+            margin-left: auto;
+            .message__time {
+              color: var(--color-blue);
+            }
+          }
+          &__text {
+            color: #1e1e1e;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+          }
+          &__time {
+            color: var(--color-gray);
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 500;
+            margin-left: auto;
+            display: block;
+            width: fit-content;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .footer {
+      border-top: 1px solid var(--color-white-200);
+      padding: 10px 0;
+      .form {
+        display: flex;
+        width: 100%;
+        column-gap: 10px;
+        align-items: center;
+        .btn {
+          height: 32px;
+          width: 32px;
+          position: relative;
+          background: url('../assets/file.svg');
+          flex-shrink: 0;
+          .material {
+            position: absolute;
+            background: var(--color-white);
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            display: none;
+          }
+        }
+
+        &__file {
+          visibility: hidden;
+          height: 32px;
+          width: 32px;
+        }
+        &__text {
+          background: var(--color-white-300);
+          border-radius: 30px;
+          width: 100%;
+          padding-left: 20px;
+          color: var(--color-gray) 999;
+          font-weight: 500;
+          font-size: 12px;
+          height: 32px;
+        }
+        &__submit {
+          width: 28px;
+          height: 28px;
+          background: var(--color-blue);
+          border-radius: 50%;
+          flex-shrink: 0;
+          background: url('../assets/arrow-submit.svg');
+        }
+      }
+    }
+  }
+}

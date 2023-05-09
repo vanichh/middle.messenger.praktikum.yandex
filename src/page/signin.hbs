@@ -1,0 +1,20 @@
+---
+title: Страница регистрации
+---
+
+
+{{!< default}}
+  <main class="container">
+    <form id="form" class="form">
+      <h2 class="form__title">Регистрация</h2>
+      {{> input/input type='email' text="почта" name="email" }}
+      {{> input/input type='text' text="Логин" name="login" }}
+      {{> input/input type='text' text="Имя" name="first_name" }}
+      {{> input/input type='text' text="Фамилия" name="second_name" }}
+      {{> input/input type='tel' text="Телефон" name="phone"}}
+      {{> input/input type='password' text="пароль" name="password" }}
+      {{> input/input type='password' text="пароль (еще раз)" name="password"}}
+      {{> button/btn text='Зарегистрироваться' type="submit"}}
+      <a href="./login.hbs">Войти</a>
+    </form>
+  </main>
